@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{mathptmx}
+\usepackage{titlesec}
+\usepackage{caption}
+
+%standard margin size is 1inch
+\usepackage[margin=1.0in]{geometry}
+%12 pt font, bold for sections
+\titleformat*{\section}{\large\bfseries}
+%space before but not after for section headers
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+%Figures 11pt font, bold
+\captionsetup[figure]{font=normalsize, font=bf} 
+
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+\title{Title}
+
+\author{Author$^{1,2}$ }
+\date{%
+    $^1$ Affiliation 1\\
+    $^2$ Affiliation 2
+}
+
+
+\begin{document}
+
+\maketitle
+
+\section*{ }
+
+\noindent
+\large{\underline{Hosting Site}: Hosting Site }
+
+\noindent
+\large{\underline{Mentor}: Mentor$^2$}
+
+\noindent
+\large{\underline{Collaborators}: Collaborator$^2$}
+
+\section*{ }
+
+
+\large{Mentors Signature}: \hline
+
+\newpage
+\section*{Abstract}
+Abstract text
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2]{portrait.png}
+\end{figure}
+
+\newpage
+\section*{Introduction}
+Text
+
+
+\section*{Description of the Research Project}
+Figure \ref{fig:pinn} is a PINN \cite{RAISSI2019686}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{pinn.png}
+    \caption{An example figure.}
+    \label{fig:pinn}
+\end{figure}
+
+
+\section*{Contributions Made to the Research Project}
+Text
+
+\section*{Future Work}
+Text
+
+\section*{What new skills and knowledge did you gain?}
+Text
+
+\section*{Research Experience Impact on My Academic/Career Planning}
+Text
+
+\section*{Relevance to the mission of NSF}
+Text
+
+\section*{Acknowledgements}
+Student is funded through the National Science Foundation (NSF) Mathematical Sciences Graduate Internship (MSGI) program which is administered by ORAU through the Oak Ridge Institute for Science and Education (ORISE) under an agreement between NSF and the U.S. Department of Energy (DOE). 
+\bibliographystyle{alpha}
+\bibliography{references}
+
+
+\end{document}
